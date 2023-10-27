@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "sajjadgol/password-changed-notification",
+    "description": "a simple package to send mail notification to the user when their password is changed",
     "keywords": [
-        ":vendor_name",
+        "sajjadgol",
         "laravel",
-        ":package_slug"
+        "password-changed-notification"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/sajjadgol/password-changed-notification",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "sajjadgol",
+            "email": "sajjad.golchin@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,19 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Sajjadgol\\PasswordChangedNotification\\": "src/",
+            "Sajjadgol\\PasswordChangedNotification\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Sajjadgol\\PasswordChangedNotification\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-password-changed-notification --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Sajjadgol\\PasswordChangedNotification\\PasswordChangedNotificationServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "PasswordChangedNotification": "Sajjadgol\\PasswordChangedNotification\\Facades\\PasswordChangedNotification"
             }
         }
     },
