@@ -2,8 +2,8 @@
 
 namespace Sajjadgol\PasswordChangedNotification\Database\Factories;
 
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 use Sajjadgol\PasswordChangedNotification\Tests\Model\User;
 
 /**
@@ -12,6 +12,7 @@ use Sajjadgol\PasswordChangedNotification\Tests\Model\User;
 class UserFactory extends Factory
 {
     protected $model = User::class;
+
     /**
      * Define the model's default state.
      *

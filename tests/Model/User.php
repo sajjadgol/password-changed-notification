@@ -1,8 +1,8 @@
 <?php
 
 namespace Sajjadgol\PasswordChangedNotification\Tests\Model;
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
